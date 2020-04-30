@@ -13,7 +13,7 @@ function getTextData(e){
     e.preventDefault();
 
 }
-//get json data
+//get json data from file
 
 function getJsonData(){
     fetch('post.json')
