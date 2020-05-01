@@ -36,16 +36,18 @@ function getJsonData(){
 
 //get api data
 function getAPIData(){
-    fetch('http://api.icndb.com/jokes/random/')
-    .then(function(res){
+    fetch('http://api.icndb.com/jokes/random/5')
+    .then(res=>{
         return res.json();
     })
-    .then(function(data){
-
-        let output= '';
-            output += `
-            <li><b>${data.value.joke}</b></li>
-            `
-        document.querySelector('.output').innerHTML=output
-    })
+    .then(data=>{
+        console.log(data)
+        let output = '';
+        let count = '';
+        data.value.map(joke=>{
+            count = Number(count+1);
+            output+=`<li>${count} -- ${joke.joke}</li>`
+        });
+        document.querySelector('.output').innerHTML=output;
+    });
 }
