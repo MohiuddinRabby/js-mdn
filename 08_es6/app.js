@@ -1,14 +1,48 @@
-class Member{
-    constructor(id,name,position){
-        this.id = id;
-        this.name = name;
-        this.position = position;
-    }
-    setMember(){
-        console.log(`Name is : ${this.name} : Position: ${this.position}`)
-    }
-}
+//CONST LET
+/**
+ const name = 'JOhn';
+let name = 'john'
+name = 'doe';
+name = 'John Doe'
+console.log(name)
+ */
 
-const member1 = new Member('01','Jhon','Teacher')
-const member2 = new Member('0501','Doe','Student')
-member1.setMember()
+//ARROW FUNCTION
+// function sayHello(){
+//     console.log('Hello');
+// }
+// sayHello();
+
+// const sayHello = (name) => {
+//   console.log(`hello ${name}`);
+// };
+// sayHello('Doe');
+
+//foreach
+//map
+//filter
+const personOne = [
+    {
+        id:1,
+        name:'bob',
+    },
+    {
+        id:2,
+        name:'doe'
+    },
+    {
+        id:3,
+        name:'john'
+    }
+];
+const personTwo = personOne.filter(person=>person.id !==2)
+console.log(personTwo)
+
+//spread
+const arr = [1,2,3]
+const arr2 = [...arr,4]
+console.log(arr2)
+//destructing
+//classess
+//subclassess
+//modules
