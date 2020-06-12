@@ -44,8 +44,8 @@ inQue = temp;
 console.log(inQue)//Mr calling
 console.log(calling)//Mr que
 */
-console.log(calling,inQue);
+console.log(calling,inQue);//Mr Calling Mr Que
 [calling,inQue] = [inQue,calling];
-console.log(calling,inQue);
+console.log(calling,inQue);//Mr Que Mr Calling
 
 
