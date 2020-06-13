@@ -1,19 +1,13 @@
-/** * ex-1 (spread)*/
-const Person = () => {
-  const personDetails = [
-    { name: "jon", age: 22 },
-    { name: "doe", age: 22 },
-  ];
-  const personDetails2 = [...personDetails];
-  console.log(personDetails2);
-};
-Person();
-///////////////////////////////////////////////////////////////////////
-/***ex-2 (map)*/
-const personDetails = [
-  { name: "jon", age: 22 },
-  { name: "doe", age: 22 },
-];
-const personInfo = personDetails.map((pd) => pd.name);
-console.log("person info", personInfo);
-///////////////////////////////////////////////////////////////////////
+//arrow function
+
+//regular func
+const name = ["testname1", "testname2", "testname3"];
+function getName() {
+  name.map((name) => {
+    console.log(`Full name is ${name} arr`);
+  });
+}
+getName();
+//with arrow func
+const getNames = name.map(name=>`hello ${name}`);
+console.log(getNames)
