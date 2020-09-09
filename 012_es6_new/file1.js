@@ -9,5 +9,11 @@ function getName() {
 }
 getName();
 //with arrow func
-const getNames = name.map(name=>`hello ${name}`);
-console.log(getNames)
+const getNames = name.map((name) => `hello ${name}`);
+console.log(getNames);
+
+const helloName = () => {
+  const names = "doe";
+  console.log(`${names}`);
+};
+helloName();
