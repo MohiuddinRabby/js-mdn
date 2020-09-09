@@ -31,3 +31,6 @@ let multiply = add * subs;
 if (multiply % 2 == 0) {
   console.log("even");
 }
+//generate random number
+const randomNumber = Math.floor(Math.random(15) * 25);
+console.log(randomNumber);
