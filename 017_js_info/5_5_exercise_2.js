@@ -1,12 +1,11 @@
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
 
 let users = [john, pete, mary];
-function sortUsers(users) {
-  users.map((items) => ({
-    fullName: `${items.name} ${items.surname}`,
-    id: `${items.id}`,
-  }));
+function sortByAge(arr) {
+  arr.sort((a, b) => a.age - b.age);
 }
-console.log(usersMapped[0].fullName);
+sortByAge(users);
+console.log(users[1].name);
+console.log(users);
