@@ -1,14 +1,10 @@
 function isPositive(a) {
-  try {
-    if (a > 0) {
-      throw (message = "YES");
-    }
-  } catch (err) {
-    if (a == 0) {
-      throw (err.message = "Zero Error");
-    } else if (a < 0) {
-      throw (err.message = "Negative Error");
-    }
+  if (a > 0) {
+    return "YES";
+  } else {
+    throw a === 0 ? new Error("Zero Error") : new Error("Negative Error");
   }
 }
 isPositive(1);
+isPositive(-3);
+isPositive(0);
