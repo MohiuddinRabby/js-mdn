@@ -29,4 +29,5 @@ topSalary(salaries);
 //   if (arr[i] > max) {
 //     max = arr[i];
 //   }
+//   console.log('k',max);
 // }
