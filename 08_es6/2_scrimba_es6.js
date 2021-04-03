@@ -31,4 +31,6 @@ const {
     },
   },
 } = demoObject;
-console.log(`${personName} (height:${height}) plays for ${club} who lives in ${city}`);
+console.log(
+  `${personName} (height:${height}) plays for ${club} who lives in ${city}`
+);
