@@ -1,4 +1,4 @@
-//aync-await promise
+//async-await promise
 const restaurant = () => {
   let customerOnTable = true;
   return new Promise((resolve, reject) => {
